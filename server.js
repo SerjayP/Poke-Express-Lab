@@ -13,7 +13,7 @@ app.get('/pokemon', (req, res)=>{
 })
 
 app.get('/pokemon/:id', (req, res)=>{
-    res.send("Show", pokemon[req.params.id])
+    res.send(pokemon[req.params.id])
 })
 
 app.listen(PORT, ()=>{
